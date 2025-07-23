@@ -37,7 +37,7 @@ MODEL = ['llama-3.1-8b', 'gpt-4o-mini', 'gemini-1.5-flash', 'qwen-2.5-32b', 'dee
 ## Eval
 First, get the evaluation results:
 ```bash
-python main.py --analysis --eval EVAL
+python evaluation.py --eval EVAL
 EVAL = ['prompting', 'agent', 'multilingual', 'translate']
 ```
 
@@ -47,7 +47,7 @@ python cal_acc.py
 ```
 
 ## Detailed Information
-We use the default settings of the API platform. Here are the details of our experiment:
+We use the default settings of the API platform. Here are the details of our experiments:
 
 [[OpenAI](https://platform.openai.com/docs/api-reference/evals/object)] / 
 [[Aliyun](https://help.aliyun.com/zh/model-studio/use-qwen-by-calling-api)] / 
