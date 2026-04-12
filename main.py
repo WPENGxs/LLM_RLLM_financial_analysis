@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 # analysis = []
 parser.add_argument('--analysis', type=str, default='')
 parser.add_argument('--model', type=str, default='gpt-4o-mini')
-parser.add_argument('--non_thinking', type='store_true', default=False)
+parser.add_argument('--non_thinking', action='store_true', default=False)
 parser.add_argument('--log_path', type=str, default='./log')
 
 def check_dir(path):
@@ -39,7 +39,10 @@ def main():
         infra_model = 'deepseek-chat'
         infra_api = 'deepseek'
     elif model == 'deepseek-r1-dis':
-        infra_model = 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B'
+        infra_model = 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B'
+        infra_api = 'deepinfra'
+    elif model == 'gpt-oss-20b':
+        infra_model = 'openai/gpt-oss-20b'
         infra_api = 'deepinfra'
     elif model == 'qwen3-14b':
         infra_model = 'qwen3-14b'

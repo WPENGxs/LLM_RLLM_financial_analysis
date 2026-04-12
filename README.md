@@ -28,10 +28,14 @@ Prepare API Key in `model.py`:
 ```
 
 ## Run
+
+> As the list of models provided by different API vendors is subject to change, some models may not be accessible. To run our code, you may switch to an API from a different vendor or deploy the models locally.
+
 ```bash
 python main.py --analysis ANALYSIS --model MODEL [--non_thinking]
 ANALYSIS = ['prompting', 'agent', 'multilingual', 'translate']
-MODEL = ['llama-3.1-8b', 'gpt-4o-mini', 'gemini-1.5-flash', 'qwen-2.5-32b', 'deepseek-v3', 'deepseek-r1-dis', 'qwen3-14b', 'o4-mini']
+MODEL = ['llama-3.1-8b', 'gpt-4o-mini', 'gemini-1.5-flash', 'qwen-2.5-32b', 'deepseek-v3', 'deepseek-r1-dis', 'gpt-oss-20b', 'qwen3-14b', 'o4-mini']
+--non_thinking = Qwen-3 non-thinking mode
 ```
 
 ## Eval

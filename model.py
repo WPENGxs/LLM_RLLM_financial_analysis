@@ -13,6 +13,9 @@ client_deepinfra = OpenAI(api_key="API KEY", base_url="https://api.deepinfra.com
 # aliyun
 client_aliyun = OpenAI(api_key="API KEY", base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
 
+# OpenRouter
+client_openrouter = OpenAI(api_key="API KEY", base_url="https://openrouter.ai/api/v1/chat/completions")
+
 BREAK_TIMES_LIMIT = 1
 
 class model():
