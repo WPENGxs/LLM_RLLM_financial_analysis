@@ -222,7 +222,7 @@ def cal_multilingual_acc(json_path):
     print(f'Overall Acc (CLP: Zh, Fr -> En): {cal_acc(zh_en_correct_list+fr_en_correct_list)}')
 
 if __name__ == '__main__':
-    model_list = ['Meta-Llama-3.1-8B-Instruct', 'gpt-4o-mini', 'gemini-1.5-flash', 'qwen2.5-32b-instruct', 'deepseek-chat', 'DeepSeek-R1-Distill-Qwen-32B', 'Qwen3-14B', 'o4-mini']
+    model_list = ['Meta-Llama-3.1-8B-Instruct', 'gpt-4o-mini', 'gemini-1.5-flash', 'qwen2.5-32b-instruct', 'deepseek-chat', 'DeepSeek-R1-Distill-Qwen-32B', 'gpt-oss-20b', 'Qwen3-14B', 'o4-mini']
     # model_list = ['gpt-4o-mini']
 
     for model in model_list:
