@@ -4,6 +4,9 @@
   <b>
   [<a href="https://arxiv.org/abs/2507.08339">Arxiv</a>]
   </b>
+  <b>
+  [<a href="https://aclanthology.org/2026.findings-acl.752/">ACL 2026 Findings</a>]
+  </b>
   <br/>
 </p>
 
@@ -123,11 +126,27 @@ top_p=1
 ## Reference
 If you find this project useful for your research, please consider citing the following paper:
 ```
-@article{wang2025factors,
-  title={What Factors Affect LLMs and RLLMs in Financial Question Answering?},
-  author={Wang, Peng and Hu, Xuesi and Wu, Jiageng and Zou, Yuntao and Zhang, Qiancheng and Li, Dagang},
-  journal={arXiv preprint arXiv:2507.08339},
-  year={2025}
+@inproceedings{wang-etal-2026-factors,
+    title = "What Factors Affect {LLM}s and {RLLM}s in Financial Question Answering?",
+    author = "Wang, Peng  and
+      Hu, Xuesi  and
+      Wu, Jiageng  and
+      Zou, Yuntao  and
+      Zhang, Qiancheng  and
+      Li, Dagang",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.752/",
+    pages = "15315--15327",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Recently, large language models (LLMs) and reasoning large language models (RLLMs) have gained considerable attention from many researchers. RLLMs enhance the reasoning capabilities of LLMs through Long Chain-of-Thought (Long CoT) processes, significantly improving the performance of LLMs in addressing complex problems. However, there are few works that systematically explore what methods can fully unlock the performance of LLMs and RLLMs within the financial domain. To investigate the impact of various methods on LLMs and RLLMs, we utilize five LLMs and four RLLMs to assess the effects of prompting methods, agentic frameworks, and multilingual alignment methods on financial question-answering tasks. Our research findings indicate: (1) Current prompting methods and agent frameworks enhance the performance of LLMs in financial question answering by simulating Long CoT; (2) RLLMs possess inherent Long CoT capabilities, which limits the effectiveness of conventional methods in further enhancing their performance; (3) Current advanced multilingual alignment methods primarily improve the multilingual performance of LLMs by extending the reasoning length, which yields minimal benefits for RLLMs. Additionally, we discuss strategies for enhancing the performance of LLMs and RLLMs in financial question answering, which may serve as a inspiration for future improvements. We hope that this study can serve as an important reference for LLMs and RLLMs in the field of financial question answering."
 }
 ```
 
